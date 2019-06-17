@@ -14,7 +14,7 @@ variables:
   dockerfilePath: '**/Dockerfile'
   tag: '$(Build.BuildId)'
   imgName: '$(containerRegistry)/$(imageRepository):$(tag)'
-  vmImageName: 'windows-latest'
+  vmImageName: 'ubuntu-latest'
 
 stages:
 - stage: Build
